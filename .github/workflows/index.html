@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Veria Technologies, Inc. | Tomorrow's Technology Today</title>
+  <meta name="description" content="Managed IT services, cybersecurity, and cloud solutions for small businesses in Colorado. Reliable technology support from Veria Technologies.">
+
+  <!-- SEO -->
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Veria Technologies, Inc.">
+  <meta property="og:description" content="Reliable IT Solutions for Colorado Businesses">
+  <meta property="og:type" content="website">
+
+  <style>
+    :root {
+      --primary: #0a3d62;
+      --secondary: #1e5f8a;
+      --light: #f4f6f8;
+      --text: #333;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 140px;
+      margin-bottom: 15px;
+    }
+
+    nav {
+      background: var(--primary);
+      text-align: center;
+      padding: 12px;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--light);
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .testimonials {
+      background: var(--light);
+      border-radius: 10px;
+      padding: 30px;
+    }
+
+    .testimonial {
+      margin-bottom: 20px;
+    }
+
+    .cta {
+      background: var(--secondary);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+      border-radius: 8px;
+    }
+
+    .cta a, button {
+      display: inline-block;
+      margin-top: 15px;
+      background: white;
+      color: var(--secondary);
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+
+    form {
+      max-width: 600px;
+      margin: auto;
+      display: grid;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <!-- Replace logo.png with your actual logo file -->
+  <img src="logo.png" alt="Veria Technologies Logo">
+  <h1>Veria Technologies, Inc.</h1>
+  <p><strong>Tomorrow's Technology Today</strong></p>
+  <p>Secure • Reliable • Forward-Thinking IT Solutions</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#testimonials">Testimonials</a>
+  <a href="#area">Service Area</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>
+    Veria Technologies provides dependable IT support and cybersecurity solutions for small
+    and mid-sized businesses. We focus on proactive support, strong security practices,
+    and scalable solutions that help your business grow without technology headaches.
+  </p>
+</section>
+
+<section id="services">
+  <h2>Services</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Managed IT Services</h3>
+      <p>Proactive monitoring and maintenance to prevent downtime and keep your business running smoothly.</p>
+    </div>
+    <div class="card">
+      <h3>Cybersecurity Protection</h3>
+      <p>Endpoint security, ransomware protection, backups, and best practices to keep your data safe.</p>
+    </div>
+    <div class="card">
+      <h3>Network Design & Support</h3>
+      <p>Secure wired and wireless networks built for reliability and performance.</p>
+    </div>
+    <div class="card">
+      <h3>Cloud & Microsoft 365</h3>
+      <p>Migration, management, and optimization of cloud platforms to support modern work.</p>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <h2>What Clients Say</h2>
+  <div class="testimonials">
+    <div class="testimonial">
+      <strong>Dance Studio Owner</strong>
+      <p>"Veria Technologies keeps our systems running flawlessly during our busiest seasons. Reliable and responsive!"</p>
+    </div>
+    <div class="testimonial">
+      <strong>Medical Office Manager</strong>
+      <p>"Security and uptime are critical for us. Veria delivered peace of mind and outstanding support."</p>
+    </div>
+  </div>
+</section>
+
+<section id="area">
+  <h2>Service Area</h2>
+  <p style="text-align:center;">
+    Proudly serving businesses throughout <strong>Denver</strong>, <strong>Colorado Springs</strong>,
+    <strong>Aurora</strong>, <strong>Parker</strong>, and surrounding Colorado communities.
+  </p>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form name="contact" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="contact">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="How can we help?" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2026 Veria Technologies, Inc. | Colorado IT Services</p>
+</footer>
+
+</body>
+</html>
